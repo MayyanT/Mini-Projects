@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap');
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, .container{
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: #06020F;
+    width: 500px;
+    height: 500px;
+    display: flex;
+}
+
+input{
+    cursor: pointer;
+}
+
+.coder a{
+    font-weight: 700;
+    text-decoration: none;
+    color: #06020F;
+}
+
+.fa-heart{
+    color: hsl(9, 100%, 41%);
+}
