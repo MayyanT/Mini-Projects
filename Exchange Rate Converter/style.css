@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    box-sizing: border;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color:rgb(49, 47, 47);
+}
+
+.container{
+    max-width: 900px;
+    height: 50vh;
+    padding:  4em;
+    margin: 5em auto;
+    border-radius: 20px;
+    background-color: #c7ccc8;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.top-section{
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+h1{
+    font-size: 2.5em;
+    margin: 1em;
+}
+
+p{
+    font-weight: 700;
+}
+
+.fa-money-bill-wave{
+    color:  #398289;
+}
+
+.exchange-section,
+.currencies,
+.swap-box{
+    display: flex;
+    align-items: center;
+}
+
+.exchange-section{
+    justify-content: space-between;
+}
+
+.currencies{
+    width: 200px;
+    flex-direction: column;
+}
+
+select, 
+input, 
+button,
+.rate,
+footer a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+select{
+    width: 100%;
+    padding: 10px 40px;
+    margin-bottom: 1.5em;
+    border: 2px solid  #85a191;
+    border-radius: 5px;
+
+    -moz-appearance: none;
+	-webkit-appearance: none;
+    appearance: none;
+    background-image: url('/512px-Sort_down_font_awesome.svg.png');
+	background-repeat: no-repeat;
+	background-position: right 1.2em top 50%;
+	background-size: 1em;
+    
+}
+
+input{
+    width: 92%;
+    padding: 10px 0;
+    margin: 1em 0;
+    border-radius: 5px;
+    border: 2px solid  #85a191;
+    text-indent: 45px;
+}
+
+input[type=number]{
+    padding-right: 1em;
+}
+
+select:focus,
+input:focus, 
+button:focus{
+    outline: none;
+}
+
+.swap-box{
+    flex-direction: column;
+}
+
+button{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    border: 2px solid #398289;
+    background-color: #398289;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #398289;
+    background: #fff;
+    border: 2px solid #398289;
+}
+
+footer{
+    position: absolute;
+    bottom: 1.5em;
+    right: 2em;
+}
+
+footer a{
+    color:rgb(49, 47, 47);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.fa-heart{
+    color: rgb(214, 3, 3);
+}
+
+@media(max-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        width: 350px;
+        height: 80vh;
+        margin: 2em auto;
+    }
+
+    h1{
+        margin-top: 0;
+    }
+
+    .exchange-section{
+        flex-direction: column;
+    }
+
+    .currencies,
+    .swap-box{
+        margin-bottom: 2.5em;
+    }
+
+    footer{
+        bottom: -1em;
+    }
+}
